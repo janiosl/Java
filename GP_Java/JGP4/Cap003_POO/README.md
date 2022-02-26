@@ -36,7 +36,7 @@
 ## 3 Execução
 * Para execução a partir da classe App.class deve chamar java da seguinte forma:
 <pre><code>
-   java -cp D:\JGP4\Cap003_POO\bin App```
+   java -cp D:\JGP4\Cap003_POO\bin App
 </code></pre>    
 
 **OBSERVAÇÃO**: A estrutura de pastas e drivers acima considera o uso do Windows e uma driver nomeado como D:, mas deve ser adaptada para realidade, seguindo a mesma lógica usada.
