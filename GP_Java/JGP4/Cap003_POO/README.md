@@ -33,10 +33,24 @@
 <pre><code>
    D:\JGP4\Cap003_POO\bin\jandl\jgp4
 </code></pre>    
-## 3 Execução
+## 3 Execução a partir do arquivo ```.class```
 * Para execução a partir da classe App.class deve chamar java da seguinte forma:
 <pre><code>
    java -cp D:\JGP4\Cap003_POO\bin App
 </code></pre>    
 
-**OBSERVAÇÃO**: A estrutura de pastas e drivers acima considera o uso do Windows e uma driver nomeado como D:, mas deve ser adaptada para realidade, seguindo a mesma lógica usada.
+## 4 Criação do executável (.jar)
+* A criação deve ser feita a partir do diretório:
+<pre><code>
+   D:\JGP4\Cap003_POO\bin
+</code></pre> 
+* A chamada da ferramenta jar deve ser:
+<pre><code>
+   jar --create --file app03.jar --main-class=App *
+</code></pre>
+
+## 3 Execução a partir do arquivo ```.jar```
+* Para execução a partir do executável app03.jar em qualquer máquina com Java deve chamar java da seguinte forma:
+<pre><code>
+   java -jar app03.jar
+</code></pre>  
