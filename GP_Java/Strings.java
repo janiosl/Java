@@ -20,13 +20,40 @@ public class Strings {
         System.out.println("Contem o trecho = " + nome.contains(trecho2));
         System.out.println("Repetindo com string convertida para maiuscula");
         System.out.println("Contem o trecho = " + nome.toUpperCase().contains(trecho2));
-        //Strings mutáveis - Classe StringBuffer
+        int pos = nome.indexOf('L');
+        System.out.println("Posicao da letra L=" + pos);
+        System.out.println("Caractere na posicao " + pos + "=" + nome.charAt(pos));
+        System.out.println("Substring na posicao " + pos + "=" + nome.substring(pos));
         String linguagens = "Java, C, Python, R, VBA";
         System.out.println("Texto original: " + linguagens);
         String[] partes = linguagens.split(", ");
         System.out.println("Texto fatiado: ");
         for (int i=0; i<partes.length; i++) {
             System.out.println(partes[i]);
-        }            
+        }
+        //Strings mutáveis - Classe StringBuffer
+        System.out.println("*** STRINGS MUTAVEIS ***");
+        //Exemplo 1
+        StringBuffer sb = new StringBuffer();
+        for (int i=0; i<10; i++) {
+            sb.append(i);
+            sb.append(',');
+        }
+        System.out.println(sb.toString());
+        //Exemplo 2
+        String lg = "Linguagem";
+        String nm = "Java";
+        StringBuffer linguagem = new StringBuffer(); //Objeto vazio
+        linguagem.append(lg); //Adição da primeira palavra
+        linguagem.append(nm);
+        //Palavras adicionadas sem espaço
+        System.out.println(linguagem);
+        //Identificação da posição para inserir um espaço
+        int idx = linguagem.indexOf("J");
+        System.out.println(idx);
+        //Inserção e conferência do resultado
+        linguagem.insert(idx, " ");
+        System.out.println(linguagem);
+        
     }
 }
