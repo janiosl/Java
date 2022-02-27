@@ -1,7 +1,6 @@
 package pckt.esp;
 public class Lutador extends Pessoa {
     //Atributos
-    private String nome;
     private int vitorias;
     private Esporte luta;
     //Métodos
@@ -10,13 +9,6 @@ public class Lutador extends Pessoa {
         this.setNome(nome);
         this.setVitorias(0);
         this.setLuta(luta);
-    }
-    //Getters e setters
-    public void setNome(String n) {
-        this.nome = n;
-    }
-    public String getNome() {
-        return this.nome;
     }
     public void setVitorias(int v) {
         this.vitorias = v;
