@@ -1,5 +1,5 @@
 package pckt.esp;
-public class Lutador {
+public class Lutador extends Pessoa {
     //Atributos
     private String nome;
     private int vitorias;
@@ -32,6 +32,7 @@ public class Lutador {
     }
     //Visualização
     public String toString() {
-        return "Lutador{nome=" + this.getNome() + ", vitorias=" + this.getVitorias() + "\nluta=" + this.getLuta() + "}";
+        return "Lutador{lutador=" + super.toString() +
+        "\nvitorias=" + this.getVitorias() + ", luta=" + this.getLuta() + "}";
     }    
 }

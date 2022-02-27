@@ -11,8 +11,11 @@ PARA ==>
     D:\Java\pac\src\pckt\esp
     D:\Java\pac\bin
 */
-import pckt.esp.Esporte;
-import pckt.esp.Lutador;
+import pckt.esp.*;
+//A importação acima substitui as linhas comentadas abaixo
+//import pckt.esp.Esporte;
+//import pckt.esp.Lutador;
+//import pckt.esp.Pessoa;
 public class Test {
     public static void main(String[] args) {
         //Criação do esporte
@@ -24,6 +27,8 @@ public class Test {
         System.out.println(k.toString());
         //Criação do lutador
         Lutador l1 = new Lutador("Janio", k);
+        l1.setIdade(41);
+        l1.setPeso(71.5f);
         System.out.println(l1.toString());
     }
 }
