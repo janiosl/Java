@@ -1,6 +1,8 @@
 public class Strings {
     public static void main(String[] args) {
-        //Strings imutáveis - Classe String
+        //==========================================//
+        //Strings imutáveis - Classe String         //
+        //==========================================//
         System.out.println("*** STRINGS IMUTAVEIS ***\n*** Criando strings ***");
         //Criação explícita
         char[] letras = {'J', 'a', 'v', 'a'};
@@ -31,7 +33,9 @@ public class Strings {
         for (int i=0; i<partes.length; i++) {
             System.out.println(partes[i]);
         }
-        //Strings mutáveis - Classe StringBuffer
+        //==========================================//
+        //Strings mutáveis - Classe StringBuffer    //
+        //==========================================//
         System.out.println("*** STRINGS MUTAVEIS ***");
         //Exemplo 1
         StringBuffer sb = new StringBuffer();
@@ -51,9 +55,32 @@ public class Strings {
         //Identificação da posição para inserir um espaço
         int idx = linguagem.indexOf("J");
         System.out.println(idx);
-        //Inserção e conferência do resultado
+        //Inserção e conferência do resultado   
         linguagem.insert(idx, " ");
         System.out.println(linguagem);
-        
+        //==========================================//
+        //Strings mutáveis - Classe StringBuilder   //
+        //==========================================//
+        /*
+        StringBuilder tem os mesmos métodos e forma de uso de StringBuffer,
+        contudo não realiza sincronização (compartilhamento entre threads).
+        Por isso, é mais eficiente para usos simples.
+        */
+        System.out.println("*** STRINGS MUTAVEIS 2 ***");
+        StringBuilder sbb = new StringBuilder();
+        for (int i=0; i<10; i++) {
+            sbb.append(i);
+            sbb.append(',');
+        }
+        System.out.println(sbb.toString());
+        sbb.append(10);
+        sbb.append("]");
+        sbb.insert(0, "[");
+        System.out.println(sbb.toString());
+        StringBuilder ling = new StringBuilder(lg);
+        ling.append("s{C, ");
+        ling.append(nm);
+        ling.append(", Python, R}");
+        System.out.println(ling.toString());
     }
 }
