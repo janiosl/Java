@@ -1,0 +1,3 @@
+Java Guia do Programador, Atualizado para Java 16
+Peter Jandl Junior, 4ª edição
+Revisada e ampliada, Janio Lima
