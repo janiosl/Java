@@ -1,8 +1,12 @@
-import ser.persist.Produto;
+import persist.ser.Produto;
 import java.io.*;
 import java.util.Date;
 public class Serializa {
     public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("No arguments provided.\nHow to use it: java Serializa <nomeArquivo.ser>");
+            System.exit(-1);
+        }
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(args[0]));) {
             System.out.println("File '" + args[0] + "' opened");
             System.out.println("Creating content...");

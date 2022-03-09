@@ -1,4 +1,4 @@
-package ser.persist;
+package persist.ser;
 import java.io.Serializable;
 public class Produto implements Serializable {
     String nome;
